@@ -1,3 +1,8 @@
 <% @pictures.each do |picture| %>
-  <%= picture.inspect %>
+  <h1><%= picture.name %></h1>
+  <%= image_tag picture.file.url %>
+  <br /><br />
 <% end %>
+
+
+<%= link_to 'new', new_picture_path %>

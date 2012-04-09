@@ -1,4 +1,5 @@
-<%= semantic_form_for @picture do |f| %>
+<%= semantic_form_for @picture, :html => {:multipart => true} do |f| %>
   <%= f.input :name %>
   <%= f.input :file, :as => :uploader %>
+  <%= submit_tag %>
 <% end %>

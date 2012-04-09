@@ -7,4 +7,9 @@ class PicturesController < ApplicationController
   def new
     @picture = Picture.new
   end
+
+  def create
+    Picture.create(params[:picture])
+    redirect_to pictures_url
+  end
 end
