@@ -29,12 +29,21 @@ class PicturesControllerTest < ActionController::TestCase
     end
     
     assert_difference 'Picture.count' do
-      post :create, :picture => {:file => image, :name => 'Good News!'} 
+      post :create, :picture => {:picture => image, :name => 'Good News!'} 
     end
     assert_redirected_to pictures_path
     
     picture = Picture.last
     assert_equal 'Good News!', picture.name
+  end
+
+  test "create validation error" do
+    assert_no_difference 'Picture.count' do
+      post :create, :picture => {}
+    end
+
+    assert_response :unprocessable_entity
+    assert_template :new
   end
 
 end

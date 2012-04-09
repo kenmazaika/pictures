@@ -1,6 +1,9 @@
 class Picture < ActiveRecord::Base
-  has_attached_file :file
-  cached_file_for :file
+  mount_uploader :avatar, PictureUploader
+  
+  cached_file_for :avatar
 
-  attr_accessible :file, :file_cache_id, :file_cache, :name
+  validates :name, :presence => true
+
+  attr_accessible :avatar, :avatar_cache_id, :avatar_cache, :name
 end

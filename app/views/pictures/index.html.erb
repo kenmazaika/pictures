@@ -1,6 +1,6 @@
 <% @pictures.each do |picture| %>
   <h1><%= picture.name %></h1>
-  <%= image_tag picture.file.url %>
+  <%= image_tag picture.avatar_url unless picture.avatar.blank?  %>
   <br /><br />
 <% end %>
 

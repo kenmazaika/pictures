@@ -9,7 +9,11 @@ class PicturesController < ApplicationController
   end
 
   def create
-    Picture.create(params[:picture])
-    redirect_to pictures_url
+    @picture = Picture.create(params[:picture])
+    if @picture.persisted?
+      redirect_to pictures_url
+    else
+      render :new, :status => :unprocessable_entity
+    end
   end
 end
