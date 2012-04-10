@@ -4,6 +4,7 @@ gem 'rails', '3.0.12'
 gem 'formtastic'
 gem 'file_upload_cache','1.0.0'
 gem 'carrierwave'
+gem 'fog'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
