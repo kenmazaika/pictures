@@ -2,7 +2,6 @@ class CreatePictures < ActiveRecord::Migration
   def self.up
     create_table :pictures do |t|
       t.string :name
-      t.has_attached_file :file
 
       t.timestamps
     end
