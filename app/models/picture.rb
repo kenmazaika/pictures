@@ -5,5 +5,5 @@ class Picture < ActiveRecord::Base
 
   validates :name, :presence => true
 
-  attr_accessible :avatar, :avatar_cache_id, :avatar_cache, :name
+  attr_accessible :avatar, :avatar_cache_id, :name
 end

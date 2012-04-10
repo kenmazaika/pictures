@@ -1,9 +1,3 @@
-PATH
-  remote: ../file_upload_cache
-  specs:
-    file_upload_cache (0.0.3)
-      uuid
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -45,6 +39,9 @@ GEM
     factory_girl_rails (1.6.0)
       factory_girl (~> 2.5.0)
       railties (>= 3.0.0)
+    file_upload_cache (1.0.0)
+      rails
+      uuid
     formtastic (2.1.1)
       actionpack (~> 3.0)
     i18n (0.5.0)
@@ -96,7 +93,7 @@ PLATFORMS
 DEPENDENCIES
   carrierwave
   factory_girl_rails
-  file_upload_cache!
+  file_upload_cache (= 1.0.0)
   formtastic
   rails (= 3.0.12)
   sqlite3

@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.12'
 gem 'formtastic'
-gem 'file_upload_cache', :path => '../file_upload_cache'
+gem 'file_upload_cache','1.0.0'
 gem 'carrierwave'
 
 # Bundle edge Rails instead:
