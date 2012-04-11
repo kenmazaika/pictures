@@ -40,7 +40,7 @@ GEM
     factory_girl_rails (1.6.0)
       factory_girl (~> 2.5.0)
       railties (>= 3.0.0)
-    file_upload_cache (1.0.0)
+    file_upload_cache (1.0.1)
       rails
       uuid
     fog (1.1.2)
@@ -111,7 +111,7 @@ PLATFORMS
 DEPENDENCIES
   carrierwave
   factory_girl_rails
-  file_upload_cache (= 1.0.0)
+  file_upload_cache (= 1.0.1)
   fog
   formtastic
   rails (= 3.0.12)
