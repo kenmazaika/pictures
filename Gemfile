@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.12'
+gem 'rails'
 gem 'formtastic'
 gem 'file_upload_cache','1.0.3'
 gem 'carrierwave'
