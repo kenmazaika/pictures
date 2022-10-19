@@ -70,7 +70,7 @@ GEM
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-ssh (2.3.0)
-    nokogiri (1.5.2)
+    nokogiri (1.5.11)
     polyglot (0.3.3)
     rack (1.2.5)
     rack-mount (0.6.14)
